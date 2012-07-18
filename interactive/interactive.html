@@ -1,0 +1,132 @@
+<div class="page_container stats_landing">
+
+	<div class="landing_section" id="us_stats">
+	
+	<div id="landing_map_left">
+			<h2 class="title">
+				Graduation rates by state
+			</h2>
+			
+			<ul id="landing_map_filter" class="filter_bar">
+				<li class="selected first"><a id="public_four" href="#" class="sector_btn">Public four-year colleges</a></li>
+				<li><a id="public_two" href="#" class="sector_btn">Public two-year colleges</a></li>
+				<li><a id="private_four" href="#" class="sector_btn">Private four-year colleges</a></li>
+				<li><a id="forprofit_four" href="#" class="sector_btn">For-profit four-year colleges</a></li>
+				<li><a id="forprofit_two" href="#" class="sector_btn last_btn">For-profit two-year colleges</a></li>
+			</ul>
+			
+			<div class="landing_key">
+				<span class="time" id="map_time_label">Six-year</span> graduation rates, 2010<br />
+				<div class="landing_key_img"></div>
+			</div>
+			
+		</div>
+		
+		<div id="landing_map">
+			<div id="map_loading">	
+				<img class="loader" src="/wp-content/themes/gates-Microsite/imgassets/icon_loader_white.gif" width="16" height="16" alt="Loading indicator" /> Loading...
+			</div>
+			<div id="map_overlay" style="display: none;">
+				<div class="overlay_header">
+					<h3>Loading...</h3>
+					<span class="label"></span>	
+				</div>
+				<div class="overlay_stats">
+					<div class="overlay_attribute">
+						<span class="value"></span>
+						<span class="description">graduated in four years</span>
+					</div>
+					<div class="overlay_attribute">
+						<span class="value"></span>
+						<span class="description">graduated in six years</span>
+					</div>
+				</div>
+				<div class="overlay_footer">
+					<a href="#">Click state for detailed stats</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	</div>
+	
+	<div class="landing_section last_section" id="landing_list_section">
+
+		
+	
+		<h2 class="title">Highest graduation rates</h2>
+	
+		<table class="landing_list" id="top_flagship">
+		<thead>
+			<tr>
+				<td class="col_name" colspan="3">
+					<h2>Flagship public universities</h2>
+				</td>
+			</tr>
+			<tr class="column_descriptions">
+				<td class="col_name">
+					College
+				</td>
+				<td class="col_rate">
+					6-year rate
+				</td>
+				<td class="col_btn">
+					
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+		
+		</tbody>
+	</table>
+	
+	<table class="landing_list" id="top_community">
+		<thead>
+			<tr>
+				<td class="col_name" colspan="3">
+					<h2>Community colleges</h2>
+				</td>
+			</tr>
+			<tr class="column_descriptions">
+				<td class="col_name">
+					with more than 500 freshmen
+				</td>
+				<td class="col_rate">
+					150% rate
+				</td>
+				<td class="col_btn">
+					
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	
+	<table class="landing_list last_table" id="top_forprofit">
+		<thead>
+			<tr>
+				<td class="col_name" colspan="3">
+					<h2>For-profit colleges</h2>
+				</td>
+			</tr>
+			<tr class="column_descriptions">
+				<td class="col_name">
+					with more than 500 freshmen
+				</td>
+				<td class="col_rate">
+					6-year rate
+				</td>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+	
+
+
+	
+</div>
+
+<script defer src="<?php echo get_stylesheet_directory_uri(); ?>/interactive/js/landing.js"></script>

@@ -1,0 +1,797 @@
+<!-- start institution content -->
+
+<div id="stats_main">	
+	
+	<div class="stats_section one_year" id="gradrates">
+		<a id="section_gradrates"></a>
+		<div class="stats_section_header header_with_filters">
+			<div class="stats_label">
+				Data Type: <span id="gradrates_singlesource"></span><select class="filter" id="gradrates_data_source"></select><a href="#" id="about_datatype" class="circle blue">?</a>
+				<div id="help_datatype"><p><strong>Four-year colleges: bachelor&rsquo;s degree-seeking students (NCES)</strong><br />First-time, full-time degree-seeking undergraduates seeking a bachelor's degree.</p><p><strong>Four-year colleges: other degree-seeking students (NCES)</strong><br />First-time, full-time undergraduates seeking any non-bachelor's degree or certificate. Expected graduation time for these programs varies.</p><p><strong>Two-year colleges: all degree-seeking students (NCES)</strong><br />First-time full-time degree seeking students at 2-year colleges. The expected completion time for these programs varies.</p><p><strong>Four-year public colleges: Full-time undergraduate students (VSA)</strong><br />The Voluntary System of Accountability data includes information on transfer students and continuing enrollment for participating public four-year colleges.</p></div>
+			</div>
+			<h3>Graduation Rates</h3>
+			<div class="stats_filters_container">
+				<ul class="stats_filters fr">
+					<li id="gradrates_gender_b" class="default active"><a href="#">All counted undergraduates</a></li>
+					<li id="gradrates_gender_m"><a href="#">Men</a></li>
+					<li class="last" id="gradrates_gender_f"><a href="#">Women</a></li>
+				</ul>
+				<ul class="stats_filters" id="grad_rates_time_filters">
+					<li class="default active" id="gradrates_time_year2010"><a href="#">2010 Graduation rate</a></li>
+					<li class="last" id="gradrates_time_historical"><a href="#">Over time</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="stats_section_content" id="stats_section_gradrates">
+			<div class="vsa_chart">
+				<div class="vsa_description">
+					<h2 class="title">About the VSA graduation rates</h2>
+					These statistics come from the <a href="http://www.voluntarysystem.org/">Voluntary System of Accountability</a>’s Student Success and Progress rate. The numbers are based on student cohort data from the <a href="http://www.studentclearinghouse.org/">National Student Clearinghouse</a> for first-time, full-time students and full-time transfer students. About half of 4-year public institutions we examined have reported these data. Because it’s linked to a particular student instead of an institution, these figures can show outcomes for students who enter and leave a particular college. <a href="/about/#data">More about this data.</a>
+				</div>
+				<div class="vsa_key">
+					<strong>Key:</strong><br />
+					<div class="key_item">
+						<div class="key_segment segment_1"></div><div class="label label_1">Graduated from this college</div><br />
+						<div class="key_segment segment_2"></div><div class="label label_2">Graduated from another college</div>
+					</div>
+					<div class="key_item">
+						<div class="key_segment segment_3"></div><div class="label label_3">Enrolled at this college</div><br />
+						<div class="key_segment segment_4"></div><div class="label label_4">Enrolled at another college</div>
+					</div>
+					<div class="key_item last_key_item">
+						<div class="key_segment segment_5"></div><div class="label label_5">Not graduated or enrolled</div>
+					</div>
+				</div>
+				<div class="vsa_section">
+					<h2 class="title">First-time, full-time students</h2>
+					<div class="bar_row first_row" id="vsa_ftft_4">
+						<span class="label">Status after four years</span>
+						<div class="bar_row_bars">
+							<div class="bar current_bar">
+								<div class="bar_segment segment_1">
+									<span class="value"></span>								
+								</div>
+								<div class="bar_segment segment_2">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_3">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_4">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_5">
+									<span class="value"></span>
+								</div>
+								<!-- 								<div class="vsa_total">
+																<span class="value"></span>
+																</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="bar_row first_row" id="vsa_ftft_6">
+						<span class="label">Status after six years</span>
+						<div class="bar_row_bars">
+							<div class="bar current_bar">
+								<div class="bar_segment segment_1">
+									<span class="value"></span>								
+								</div>
+								<div class="bar_segment segment_2">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_3">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_4">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_5">
+									<span class="value"></span>
+								</div>
+								<!-- 								<div class="vsa_total">
+																	<span class="value"></span>
+																</div> -->
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="vsa_section last_vsa_section">
+					<h2 class="title">Full-time transfer students</h2>
+					<div class="bar_row first_row" id="vsa_trans_4">
+						<span class="label">Status after four years</span>
+						<div class="bar_row_bars">
+							<div class="bar current_bar">
+								<div class="bar_segment segment_1">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_2">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_3">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_4">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_5">
+									<span class="value"></span>
+								</div>
+								<!-- 								<div class="vsa_total">
+																<span class="value"></span>
+																</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="bar_row first_row" id="vsa_trans_6">
+						<span class="label">Status after six years</span>
+						<div class="bar_row_bars">
+							<div class="bar current_bar">
+								<div class="bar_segment segment_1">
+									<span class="value"></span>
+
+								</div>
+								<div class="bar_segment segment_2">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_3">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_4">
+									<span class="value"></span>
+								</div>
+								<div class="bar_segment segment_5">
+									<span class="value"></span>
+								</div>
+								<!-- 								<div class="vsa_total">
+																<span class="value"></span>
+																</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				
+		</div>
+			<div id="historical_error" style="display:none;">This college does not meet the display criteria for over-time display. It has had too few counted students to provide meaningful over-time display. If another data type is available, it may contain qualify for over-time display.</div>	
+			<div class="historical_chart">
+				<div id="historical_chart_header">
+					<div class="stats_label gradrate_historical_dropdown">
+						<select class="filter" id="gradrates_data_race">
+							<option class="default" id="gradrates_race_x">All races</option>
+							<option id="gradrates_race_w">White</option>
+							<option id="gradrates_race_b">Black</option>
+							<option id="gradrates_race_a">Asian</option>
+							<option id="gradrates_race_h">Hispanic</option>
+							<option id="gradrates_race_ai">American Indian</option>
+						</select>
+					</div>
+					<div class="top_label gradrate_historical_2010">
+						<h2 id="gradrate_historical_2010_value">
+							44%
+						</h2>
+						<span class="value_label">of <span id="gradrate_historical_race">all</span> <span id="gradrate_historical_gender">students</span> graduated within <span id="gradrate_historical_source">four years</span>&nbsp;in 2010</span>
+					</div>
+					<div class="top_label gradrate_historical_change">
+						<h2 id="gradrate_historical_change_value" class="">
+							<span class="operator">+</span>4.3
+						</h2>
+						<span class="value_label">percentage point change from 2002 to 2010</span>
+					</div>
+				</div>
+				<div id="historical_chart_ipeds">
+				</div>
+				<div class="historical_note">Racial groups with fewer than 20 students in any year cannot be viewed separately using the drop-down menu, but they are included in the totals for &lsquo;All races.&rsquo;</div>
+			</div>
+			<div class="bar_chart">
+				<div class="bar_chart_header">
+					<div class="top_label four_year segment_1" id="gradrate_label_four" style="width: 44%;">
+						<h2 class="gradrate_all_four"></h2><span class="value_label">of all <span class="total"></span>&nbsp;counted students <br />graduated in <span class="cohort_normal">four years</span></span>
+					</div>
+					<div class="top_label four_year segment_2" id="gradrate_label_six">
+						<h2 class="gradrate_all_six"></h2><span class="value_label">graduated in <span class="cohort_complete">six years</span></span>
+					</div>
+				</div>
+				<div class="bar_row first_row" id="gradrates_bar_x">
+					<div class="bar_row_bars">
+						<div class="bar current_bar">
+							<div class="bar_segment segment_1" style="width: 0">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+								&nbsp;
+							</div>
+							<div class="value seg2val"></div>
+						</div>
+						<div class="bar compare_bar_1">
+							<div class="bar_segment segment_1" style="width: 0">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+								&nbsp;
+							</div>
+							<div class="value seg2val"></div>
+						</div>
+					</div>
+					<span class="compare_label">U.S. average, <span class="sector">4-year public</span>s</span>
+				</div>
+				<div class="bar_row" id="gradrates_bar_w">
+					<span class="label">White <span class="lighter"><span class="total"></span>&nbsp;students</span></span>
+					<!-- <div class="bar_row_right_notation">
+											<span class="total"></span><br /> 
+											white students
+										</div> -->
+					<div class="bar_row_bars">
+
+						<div class="bar current_bar">
+	
+							<div class="bar_segment segment_1" style="width: 0;">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+								&nbsp;
+							</div>
+							<div class="value seg2val"></div>
+						</div>
+						<div class="bar compare_bar_1">
+							<div class="bar_segment segment_1" style="width: 0">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+												&nbsp;		</div>
+						<div class="value seg2val"></div>
+						</div>
+					</div>
+					<span class="compare_label">U.S. average, <span class="sector">4-year public</span>s</span>
+				</div>
+				<div class="bar_row" id="gradrates_bar_b">
+															<span class="label">Black <span class="lighter"><span class="total"></span>&nbsp;students</span></span>
+					<div class="bar_row_bars">
+
+						<div class="bar current_bar">
+
+							<div class="bar_segment segment_1" style="width: 0;">	
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+							&nbsp;
+							</div>
+								<div class="value seg2val"></div>
+						</div>	
+						<div class="bar compare_bar_1">
+							<div class="bar_segment segment_1" style="width: 0">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+							&nbsp;
+							</div>
+							<div class="value seg2val"></div>
+						</div>
+						<span class="compare_label">U.S. average, <span class="sector">4-year public</span>s</span>
+					</div>
+				</div>
+				<div class="bar_row" id="gradrates_bar_a">
+															<span class="label">Asian <span class="lighter"><span class="total"></span>&nbsp;students</span></span>
+
+					<div class="bar_row_bars">
+
+						<div class="bar current_bar">
+							<div class="bar_segment segment_1" style="width: 0;">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+							&nbsp;
+							</div>
+								<div class="value seg2val"></div>
+						</div>
+						<div class="bar compare_bar_1">
+							<div class="bar_segment segment_1" style="width: 0">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+								&nbsp;
+							</div>
+							<div class="value seg2val"></div>
+						</div>
+						<span class="compare_label">U.S. average, <span class="sector">4-year public</span>s</span>
+					</div>
+				</div>
+				<div class="bar_row" id="gradrates_bar_h">
+														<span class="label">Hispanic <span class="lighter"><span class="total"></span>&nbsp;students</span></span>
+					<div class="bar_row_bars">
+
+						<div class="bar current_bar">
+							<div class="bar_segment segment_1" style="width: 0%;">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0%">
+							&nbsp;
+							</div>
+								<div class="value seg2val"></div>
+						</div>
+						<div class="bar compare_bar_1">
+							<div class="bar_segment segment_1" style="width: 0">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0">
+				&nbsp;
+							</div>
+											<div class="value seg2val"></div>
+						</div>
+					</div>
+					<span class="compare_label">U.S. average, <span class="sector">4-year public</span>s</span>
+				</div>
+				<div class="bar_row last_row" id="gradrates_bar_ai">
+				<span class="label">American Indian <span class="lighter"><span class="total"></span>&nbsp;students</span></span>
+					<div class="bar_row_bars">
+						<div class="bar current_bar">
+						
+							<div class="bar_segment segment_1" style="width:0;">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0;">
+								&nbsp;
+							</div>
+							<div class="value seg2val"></div>
+						</div>
+						<div class="bar compare_bar_1">
+							<div class="bar_segment segment_1" style="width: 0;">
+								<span class="value"></span>
+							</div>
+							<div class="bar_segment segment_2" style="width: 0;">
+								&nbsp;
+							</div>
+							<div class="value seg2val"></div>
+						</div>
+					</div>
+					<span class="compare_label">U.S. average, <span class="sector">4-year public</span>s</span>
+				</div>
+			</div>
+			<div class="counted">				
+				<h2 class="title">How much of the <span class="level_class">2004</span> entering class was included in the graduation rate?</h2>
+				<div class="counted_pie_container">
+					<div class="counted_label">
+						<h4>Counted</h4>
+						<h2 id="gradrates_counted"></h2>
+					</div>
+					<div class="counted_pie">
+					</div>
+					<div class="left_out_label">
+						<h4>Left out</h4>
+						<h2 id="gradrates_left_out"></h2>
+					</div>
+				</div>
+				<div class="counted_description">
+					Not all undergraduates are included in the official graduation rate. The U.S. omits part-time freshmen and those who have attended college before, among others, from its graduation-rate survey. The outcomes for those students are not known.
+				</div>
+			</div>
+		</div>
+		<div class="stats_section_footer">
+			<!-- <div class="stats_discussions">
+							<a href="/college-completion/category/graduation-rates">Show related discussions</a>
+						</div> -->
+			<div class="stats_section_export">
+				<div class="generate_link" id="generate_gradrates">
+					Link to this chart
+				</div>
+				<a href="#" class="print">Print this chart</a>
+				<!-- <a href="#" class="data">Get data for this chart</a> -->
+				<br />
+				<div class="link_overlay" id="link_overlay_gradrates">
+					<input class="link_overlay_url" value="" type="text" /><!-- <a href="#" class="red circle">X</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="stats_section" id="efficiency">
+		<a id="section_efficiency"></a>
+		<div class="stats_section_header">
+			<h3>Efficiency</h3>
+		</div>
+		<div class="stats_section_content" id="stats_section_efficiency">
+			<div class="efficiency_container" id="efficiency_awards">
+				<div class="left_description">
+					<h2 class="title">Completions per 100 students</h2>
+					A ratio which shows the total number of undergraduate-level completions (degrees and certificate programs of at least one year in length) per total 100 full-time equivalent undergraduates, based on total credit hours taken. It's the three-year average for 2008, 2009, and 2010, and includes all undergraduate students, not only the first-time, full-time ones. 
+				</div>
+				<div class="bar_chart">
+					<div class="bar_chart_header">
+						<div class="top_label four_year segment_1">
+							<h2 class="efficiency_awards_inst_value"></h2><span class="value_label" style="width:80%;">completions per 100 full-time equivalent undergraduates</span>
+						</div>
+					</div>
+					<div class="bar_row first_row last_row">
+						<div class="bar_row_bars">
+							<div class="bar current_bar">
+								<div class="bar_segment segment_1" style="width: 0%;" id="efficiency_awards_inst_container">
+									&nbsp;<!--<span class="value efficiency_awards_inst_value"></span>-->
+								</div>
+								<div class="value seg2val" id="efficiency_awards_inst_value"></div>
+							</div>
+							<div class="bar compare_bar_1">
+								<div class="bar_segment segment_1" style="width:0%" id="efficiency_awards_state_container">
+									&nbsp;<!--<span class="value" id="efficiency_awards_state_value"></span>-->
+								</div>
+								<div class="value seg2val" id="efficiency_awards_state_value"></div>
+							</div>
+									<span class="label"><span class="state_abbrev">Ore.</span> <span class="sector">4-year public</span>s</span>
+
+							<div class="bar compare_bar_2">
+								<div class="bar_segment segment_1" style="width: 0%" id="efficiency_awards_sector_container">
+								&nbsp;<!--<span class="value" id="efficiency_awards_sector_value"></span>-->
+								</div>
+								<div class="value seg2val" id="efficiency_awards_sector_value"></div>
+							</div>
+							<span class="label">U.S. Average,  <span class="sector">4-year public</span>s</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="efficiency_container" id="efficiency_spending">
+				<div class="left_description">
+					<h2 class="title">Educational spending per completion</h2>
+					Estimated educational spending (expenses related to instruction, student services, academic support, institutional support, operations and maintenance) per academic award in 2010. Includes all certificates and degrees.
+				</div>
+				<div class="bar_chart">
+					<div class="bar_chart_header">
+						<div class="top_label four_year segment_1" style="width: 370px;">
+							<h2 class="efficiency_spending_inst_value"></h2><span class="value_label" style="width:80%;">educational spending per completion</span>
+						</div>
+					</div>
+					<div class="bar_row first_row last_row">
+						<div class="bar_row_bars">
+							<div class="bar current_bar">
+								<div class="bar_segment segment_1" style="width: 0%;" id="efficiency_spending_inst_container">
+									&nbsp;<!--<span class="value" id="efficiency_awards_sector_value"></span>-->
+								</div>
+								<div class="value seg2val" id="efficiency_spending_inst_value"></div>
+							</div>
+							<div class="bar compare_bar_1">
+								<div class="bar_segment segment_1" style="width: 0%" id="efficiency_spending_state_container">
+									&nbsp;<!--<span class="value" id="efficiency_awards_sector_value"></span>-->
+								</div>
+								<div class="value seg2val" id="efficiency_spending_state_value"></div>
+							</div>
+							<span class="label"><span class="state_abbrev">Ore.</span> <span class="sector">4-year public</span>s</span>
+				
+							<div class="bar compare_bar_2">
+								<div class="bar_segment segment_1" style="width: 0%" id="efficiency_spending_sector_container">
+									&nbsp;<!--<span class="value" id="efficiency_awards_sector_value"></span>-->
+								</div>
+								<div class="value seg2val" id="efficiency_spending_sector_value"></div>
+							</div>
+							<span class="label">U.S. Average, <span class="sector">4-year public</span>s</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="stats_section_footer">
+			<!-- <div class="stats_discussions">
+							<a href="/college-completion/category/efficiency">Show related discussions</a>
+						</div> -->
+			<div class="stats_section_export">
+				<div class="generate_link" id="generate_efficiency">
+					Link to this chart
+				</div>
+				<a href="#" class="print">Print this chart</a>
+				<!-- <a href="#" class="data">Get data for this chart</a> -->
+				<br />
+				<div class="link_overlay" id="link_overlay_efficiency">
+					<input class="link_overlay_url" value="" type="text" /><!-- <a href="#" class="red circle">X</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="stats_section" id="strengths">
+		<a id="section_strengths"></a>
+		<div class="stats_section_header">
+			<h3>In Context</h3>
+		</div>
+		<div class="stats_section_content" id="stats_section_strengths">
+			<div id="strengths_table">
+				<!-- <div class="strengths_lines">
+					<div class="strengths_line"></div>
+					<div class="strengths_line"></div>
+				</div> -->
+				<div class="stats_label strengths_row_header">
+					<div class="desc">
+						This chart shows how this college compares with all <span class="sector">4-year public</span> colleges in the U.S.
+					</div>
+					<div class="labels">
+						<span class="low">Low</span>
+						<span class="middle">Middle</span>
+						<span class="high">High</span>
+					</div>
+				</div>
+				<div class="strengths_row">
+					<div class="category_col">
+						<h4 id="sw_onehundred">4-Year graduation rate</h4>
+						<span class="label"><span class="sw_level_label">bachelor's</span>-seeking undergrads</span>
+					</div>
+					<div class="value_col gradrate_all_four"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="gradrates_all_four_percentile" style=""></div>
+					</div>
+				</div>
+				<div class="strengths_row">
+					<div class="category_col">
+						<h4 id="sw_onefifty">6-Year graduation rate</h4>
+						<span class="label"><span class="sw_level_label">bachelor's</span>-seeking undergrads</span>
+					</div>
+					<div class="value_col gradrate_all_six"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="gradrates_all_six_percentile" style=""></div>
+					</div>
+				</div>
+				<div class="strengths_row">
+					<div class="category_col">
+						<h4>Median SAT score</h4>
+						<span class="label">estimated</span>
+					</div>
+					<div class="value_col" id="sw_sat_value"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="sw_sat_percentile" style="left: 0%;"></div>
+					</div>
+				</div>
+				<div class="strengths_row">
+					<div class="category_col">
+						<h4>Student aid</h4>
+						<span class="label">per undergraduate recipient</span>
+					</div>
+					<div class="value_col" id="sw_aid_value"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="sw_aid_percentile" style=""></div>
+					</div>
+				</div>
+				<div class="strengths_row">
+					<div class="category_col">
+						<h4>Pell Grants</h4>
+						<span class="label">% of undergraduates</span>
+					</div>
+					<div class="value_col" id="sw_pell_value"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="sw_pell_percentile" style=""></div>
+					</div>
+				</div>
+				<div class="strengths_row">
+					<div class="category_col">
+						<h4>Endowment</h4>
+						<span class="label">assets per FTE enrollment</span>
+					</div>
+					<div class="value_col" id="sw_endowment_value"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="sw_endowment_percentile" style=""></div>
+					</div>
+				</div>
+				<div class="strengths_row">
+					<div class="category_col">
+						<h4>Freshman retention</h4>
+						<span class="label">% of full-time freshmen</span>
+					</div>
+					<div class="value_col" id="sw_retention_value"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="sw_retention_percentile" style=""></div>
+					</div>
+				</div>
+				<div class="strengths_row" id="last_strengths_row">
+					<div class="category_col">
+						<h4>Full-time faculty</h4>
+						<span class="label">portion of all faculty</span>
+					</div>
+					<div class="value_col" id="sw_faculty_value"></div>
+					<div class="indicator_col">
+						<div class="indicator" id="sw_faculty_percentile" style=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="stats_section_footer">
+			<!-- <div class="stats_discussions">
+							<a href="/college-completion/category/strengths-and-weaknesses">Show related discussions</a>
+						</div> -->
+			<div class="stats_section_export">
+				<div class="generate_link" id="generate_strengths">
+					Link to this chart
+				</div>
+				<a href="#" class="print">Print this chart</a>
+				<!-- <a href="#" class="data">Get data for this chart</a> -->
+				<br />
+				<div class="link_overlay" id="link_overlay_strengths">
+					<input class="link_overlay_url" value="" type="text" /><!-- <a href="#" class="red circle">X</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="stats_section" id="compare">
+		<a id="section_compare"></a>
+		<div class="stats_section_header header_with_filters">	
+			<div class="stats_filters">
+				<div class="metric">
+					Peer group<br />
+					<select class="filter" id="compare_data_group">
+						<option id="compare_group_sectorstate" class="default">public universities in Oregon</option>
+						<option id="compare_group_sector">public universities</option>
+						<option id="compare_group_carnegie">Carnegie class</option>
+						<option id="compare_group_similar">similar institutions</option>
+					</select>
+				</div>
+				<div class="metric last_metric">
+					Metric<br />
+					<select class="filter" id="compare_data_metric">
+						<option id="compare_metric_gradrates" class="default">graduation rates</option>
+						<option id="compare_metric_aid">student aid</option>
+						<option id="compare_metric_pell">Pell Grant recipients</option>
+						<option id="compare_metric_awards">completions per undergraduate</option>
+						<option id="compare_metric_spending">educational spending per completion</option>
+					</select>
+				</div>
+			</div>
+			<h3>Compare to Peers</h3>
+			<div class="pagination"></div>	
+		</div>
+		<div class="stats_section_content">
+			<table class="compare_peers gradrates">
+				<thead>
+					<tr>
+						<td width="10" class="col_number"></td>
+						<td class="col_name" id="compare_name"><div class="th_label">College</div><div class="indicator"></div></td>
+						<td colspan=2 class="col_bar active" id="compare_table_header_2"><div class="th_label">&nbsp;</div><div class="indicator"></div>
+						</td>
+					</tr>
+					<!-- 					<tr class="loading_row">
+											<td colspan="3"><img class="loader" src="<?php echo get_stylesheet_directory_uri(); ?>/imgassets/icon_loader_white.gif" width="16" height="16" alt="Loading indicator" /> Loading...</td>
+										</tr> -->
+				</thead>
+				<tbody>
+					<!-- Compare to peers content -->
+				</tbody>
+				<tfoot>
+
+				</tfoot>
+			</table>
+		</div>
+		<div class="stats_section_footer">
+			<div class="stats_section_export">
+				<div class="generate_link" id="generate_compare">
+					Link to this chart
+				</div>
+				<a href="#" class="print">Print this chart</a>
+				<br />
+				<div class="link_overlay" id="link_overlay_compare">
+					<input class="link_overlay_url" value="" type="text" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="stats_section" id="custom">
+		<a id="section_custom"></a>
+		<div class="stats_section_header">
+			<h3>Create a Custom Peer Group</h3>
+		</div>
+		<div class="stats_section_content">
+				
+					<div id="custom_header">
+						<h2>Type a college and press enter to add it to the peer group:</h2>
+						<form id="custom_search_form"><input type="text" id="custom_chooser" /></form>
+					</div>
+					<div class="table_key"></div>
+			<table class="top_performers">
+				<thead>
+					<tr>
+						<td class="col_name col_1">College</td>
+						<td class="col_2">Grad. rate<br />150% time</td>
+						<td class="col_3">Grad. rate<br />100% time</td>
+						<td class="col_4">Completions per 100 students</td>
+						<td class="col_5">Spending per completion</td>
+						<td class="col_6">Student aid per recipient</td>
+						<td class="col_7">Students with Pell Grants</td>
+						<td class="col_delete"></td>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- custom peer rows here -->
+				</tbody>
+				<tfoot>
+
+				</tfoot>
+			</table>
+			
+		</div>
+		<div class="stats_section_footer">
+			<div class="stats_section_export">
+				<div class="generate_link" id="generate_custom">
+					Save or share this peer group
+				</div>
+				<a href="#" class="print">Print this chart</a>
+				<!-- <a href="#" class="data">Get data for this chart</a> -->
+				<br />
+				<div class="link_overlay" id="link_overlay_custom">
+					<input class="link_overlay_url" value="" type="text" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="stats_section" id="data">
+		<a id="section_data"></a>
+		<div class="stats_section_header">
+			<!-- <div class="stats_label">
+				Completions per 100 FTE undergraduates are an average of the past three years.
+			</div> -->
+			<h3>Get Data</h3>
+		</div>
+		<div class="stats_section_content" id="stats_section_data">
+			<div class="efficiency_container" id="efficiency_awards">
+				<div class="left_description">
+					<h2 class="title">Download complete data for <span id="data_college_name"></span></h2>
+					<p>Data is available in CSV format, which can be opened in Excel. A larger set of files containing <a href="/about#download">data for all colleges and states</a> is also available. </p>
+					<ul class="text_list">
+						<li><a href="/about#data">About the data in this project</a></li>
+						<li><a href="/wp-content/themes/gates-Microsite/data/data_documentation.txt" target="external">Documentation for the data files</a></li>
+					</ul>
+				</div>
+				<div class="right_description" id="export_list">
+					
+					<h4 class="first">College data</h4>
+					
+					<a class="data_link" id="export_general">	<div></div>
+						<strong class="filename">Institutional statistics</strong><br />
+						<span class="file_description">Basic information, statistics such as freshman retention and endowment size, and VSA graduation rates, if available.</span>
+					</a>
+					<a class="data_link" id="export_gradrates">	<div></div>
+						<strong class="filename">Graduation rates</strong><br />
+						<span class="file_description">Broken down by gender and race, for all available years.</span>
+					</a>
+					
+					<h4>Comparison data</h4>
+					
+					<a class="data_link" id="export_sector">	<div></div>
+						<strong class="filename">U.S. <span class="sector">public 4-year</span> graduation rates</strong><br />
+						<span class="file_description">Aggregate graduation-rate data for this college&rsquo;s sector.</span>
+					</a>
+					<a class="data_link" id="export_compare">	<div></div>
+						<strong class="filename">Current peer group</strong><br />
+						<span class="file_description">Data for colleges shown in the &lsquo;Compare to Peers&rsquo; section.</span>
+					</a>
+					<a class="data_link disabled" id="export_custom">
+					<div></div>
+						<strong class="filename">Current custom group</strong> <br />
+						<span class="file_description">Data for colleges shown in the &lsquo;Custom Peer Group&rsquo; section. <em>Please note that you must make selections above to activate this link.</em></span>
+					</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class="stats_section" id="comments">
+		<a id="section_comment"></a>
+		<div class="stats_section_header">
+			<h3>Comment</h3>
+		</div>
+		<div class="stats_section_content">
+			<div id="disqus_thread">
+				<div>My default content.</div>				
+			</div>
+		</div>
+	</div>
+	<iframe id="print"></iframe>
+
+</div>
+
+<div id="stats_left">
+	<ul id="stats_menu">
+		<li><a href="#section_gradrates" class="menu_option active" id="anchor_gradrates">Graduation Rates</a></li>
+		<li><a href="#section_efficiency" class="menu_option" id="anchor_efficiency">Efficiency</a></li>
+		<li><a href="#section_strengths" class="menu_option" id="anchor_strengths">In Context</a></li>
+		<li><a href="#section_compare" class="menu_option" id="anchor_compare">Compare to Peers</a></li>
+		<li><a href="#section_custom" class="menu_option" id="anchor_custom">Custom Peer Group</a></li>
+		<li><a href="#section_data" class="menu_option" id="anchor_data">Get Data</a></li>
+		<li><a href="#section_comment" class="menu_option last" id="anchor_comment">Comment</a></li>
+	</ul>
+</div>

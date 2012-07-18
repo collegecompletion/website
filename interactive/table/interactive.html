@@ -1,0 +1,76 @@
+<div class="page_container" id="table_page">
+	
+	<div class="page_header">
+		<div class="floating_data_link">
+			<a class="small_data_link" href="/about#download">Download source data for all colleges</a>
+		</div>
+		<h1>All graduation rates, 2010</h1>
+	</div>
+	<div class="table_bread table_top">
+		<div class="table_nav">
+			<span class="loading_indicator"><img class="loader" src="<?php echo get_stylesheet_directory_uri(); ?>/imgassets/icon_loader_black.gif" width="16" height="16" alt="Loading indicator" /> Loading...</span>
+			<span class="table_results">Showing <span class="table_results_start">1</span>&#150;<span class="table_results_finish">20</span> of <span class="results_num"></span>&nbsp;colleges</span>
+		</div>
+		<div id="table_filters">
+			<select id="filter_state">
+				<option value="all">All states</option> <option value="alabama">Alabama</option><option value="alaska">Alaska</option><option value="arizona">Arizona</option><option value="arkansas">Arkansas</option><option value="california">California</option><option value="colorado">Colorado</option><option value="connecticut">Connecticut</option><option value="delaware">Delaware</option><option value="district_of_columbia">District of Columbia</option><option value="florida">Florida</option><option value="georgia">Georgia</option><option value="hawaii">Hawaii</option><option value="idaho">Idaho</option><option value="illinois">Illinois</option><option value="indiana">Indiana</option><option value="iowa">Iowa</option><option value="kansas">Kansas</option><option value="kentucky">Kentucky</option><option value="louisiana">Louisiana</option><option value="maine">Maine</option><option value="maryland">Maryland</option><option value="massachusetts">Massachusetts</option><option value="michigan">Michigan</option><option value="minnesota">Minnesota</option><option value="mississippi">Mississippi</option><option value="missouri">Missouri</option><option value="montana">Montana</option><option value="nebraska">Nebraska</option><option value="nevada">Nevada</option><option value="new_hampshire">New Hampshire</option><option value="new_jersey">New Jersey</option><option value="new_mexico">New Mexico</option><option value="new_york">New York</option><option value="north_carolina">North Carolina</option><option value="north_dakota">North Dakota</option><option value="ohio">Ohio</option><option value="oklahoma">Oklahoma</option><option value="oregon">Oregon</option><option value="pennsylvania">Pennsylvania</option><option value="rhode_island">Rhode Island</option><option value="south_carolina">South Carolina</option><option value="south_dakota">South Dakota</option><option value="tennessee">Tennessee</option><option value="texas">Texas</option><option value="utah">Utah</option><option value="vermont">Vermont</option><option value="virginia">Virginia</option><option value="washington">Washington</option><option value="west_virginia">West Virginia</option><option value="wisconsin">Wisconsin</option><option value="wyoming">Wyoming</option>
+			</select>
+			<select id="filter_sector">
+				<option value="all">All sectors</option>
+				<option value="all_4-year">All four-year colleges</option>
+				<option value="public_4-year">Public four-year</option>
+				<option value="private_4-year">Private four-year</option>
+				<option value="forprofit_4-year">For-profit four-year</option>
+				<option value="all_2-year">All two-year colleges</option>
+				<option value="public_2-year">Public two-year</option>
+				<option value="forprofit_2-year">For-profit two-year</option>
+			</select>
+			<select id="filter_size">
+				<option value="all">All sizes</option>
+				<option value="500" selected="selected">500+ freshmen per year<!-- Graduating class of more than 1,000 --></option>
+				<option value="1000">1,000+ freshmen per year</option>
+				<option value="2000">2,000+ freshmen per year</option>
+			</select>
+		</div>
+		<div class="table_btns">
+			<a class="prev btn" href="#">&larr; Previous</a>
+			<a class="next btn" href="#">Next &rarr;</a>
+		</div>
+	</div>
+	
+	<table id="stats_table">
+		<thead>
+			<tr class="headers">
+				<th id="col_chronname" class="first alpha"><span class="college">College</span><br /><span class="location">Location</span><div class="indicator" /></th>
+				<th id="col_grad_150_value" class="sorting desc">Graduation rate (150%)<div class="indicator" /></th>
+				<th id="col_grad_100_value">Graduation rate (100%)<div class="indicator" /></th>
+				<th id="col_control" class="alpha">Type<div class="indicator" /></th>
+				<th id="col_student_count">Undergrad enrollment<div class="indicator" /></th>
+				<th id="col_med_sat_value">Median SAT score<div class="indicator" /></th>
+				<th id="col_pell_value">Pell grant recipients<div class="indicator" /></th>
+				<th id="col_exp_award_value">$ spent per degree<div class="indicator" /></th>
+				<th id="col_aid_value" class="last">Aid per recipient<div class="indicator" /></th>
+			</tr>
+		</thead>
+		<tbody id="stats_table_body">
+			<tr class="placeholder">
+				<td colspan="9">&nbsp;</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<div class="table_bread table_bottom">
+		<div class="table_nav">
+			<span class="loading_indicator"><img class="loader" src="<?php echo get_stylesheet_directory_uri(); ?>/imgassets/icon_loader_black.gif" width="16" height="16" alt="Loading indicator" /> Loading...</span>
+			<span class="table_results">Showing <span class="table_results_start">1</span>&#150;<span class="table_results_finish">20</span> of <span class="results_num"></span>&nbsp;colleges</span>
+		</div>
+		<div class="table_btns">
+			<a class="prev btn" href="#">&larr; Previous</a>
+			<a class="next btn" href="#">Next &rarr;</a>
+		</div>
+	</div>
+	
+	
+</div>
+
+<script defer src="<?php echo get_stylesheet_directory_uri(); ?>/interactive/js/table.js"></script>

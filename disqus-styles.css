@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+div#disqus_thread {
+	font-family: Arial, Helvetica, Sans-Serif;
+	visibility: visible; /* overwrites visibility: hidden in styles.css; avoids flash of unstyled content */
+}
+
+	body.single-post #disqus_thread {
+		padding: 0 20px;
+	}
+
+	#dsq-content .dsq-comment-text {
+		font-family: Georgia;
+		font-size: 15px;
+		color: #444;
+	}
+
+	body.single-post #dsq-content #dsq-global-toolbar {
+		margin: 0 -20px;
+		padding: 10px 20px;
+		background-color: #f7f7f7;
+	}
+
+	#dsq-content #dsq-new-post {
+		margin: 0 -20px 20px -25px;
+		padding: 0 20px 20px 25px;
+		border-bottom: 1px solid #EFEFEF;
+	}
+
+		body.single-post #dsq-content #dsq-new-post {
+			margin: 0 -20px 15px -20px;
+			padding: 0 20px 15px 20px;
+			background-color: #f7f7f7;
+			border-bottom: 1px dashed #CCC;
+		}
+
+		.dsq-authenticate p {
+			color: #777;
+		}
+
+	#dsq-content #dsq-comments-title {
+		margin-bottom: 6px;
+		float: left;
+	}
+
+	#dsq-content .dsq-options {
+		clear: none;
+		float: right;
+	}
+
+		#dsq-content .dsq-options span.dsq-subscribe-rss {
+			margin-right: 0;
+		}
+
+	#dsq-content #dsq-realtime-options {
+		display: none;
+		/*float: right;
+				clear: right;
+				color: #777;*/
+	}
+
+	#dsq-content .dsq-realtime-alert {
+		clear: both;
+	}
+
+	#dsq-content ul#dsq-comments {
+		clear: both;
+		margin: 0 -20px 0 -25px;
+	}
+
+		#dsq-content ul#dsq-comments > img { /* loading indicator, which lacks a class */
+			margin-left: 25px;
+		}
+
+		#dsq-content ul#dsq-comments ul#dsq-comments { /* bad html generated on comment resort; element nests in itself */
+			margin: 0 !important; 
+		}
+
+		#dsq-content li.dsq-comment {
+			margin-bottom: 10px;
+			border-bottom: 1px solid #EFEFEF;
+			padding: 0 20px 0 25px;
+		}
+
+		#dsq-content .dsq-comment-header,
+		#dsq-content .dsq-moderator .dsq-comment-header  {
+			background: none;
+			border: none;
+			border-radius: 0;
+		}
+
+			#dsq-content .dsq-comment-header-time a {
+				color: #777;
+			}
+
+			#content #dsq-content .dsq-comment-header td {
+				padding: 0;
+			}
+
+			#dsq-content .dsq-header-avatar a.dsq-avatar {
+				padding: 3px 6px 3px 0;
+			}
+
+	/* Hide like this page buttons on institution pages */
+	body.institution #dsq-content #dsq-global-toolbar .dsq-global-toolbar-left {
+		display: none;
+	}
+
+		/* Move new post box to top of disqus thread */
+		body.institution #dsq-content #dsq-new-post {
+			margin-top: -45px;
+		}
