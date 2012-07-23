@@ -17,7 +17,7 @@ This repository includes:
 This project will not work out of the box: 
 
 * The data calls depend on The Chronicle's restful data server. Another data server, such as Google Fusion Tables, can be substituted; however, the syntax of data calls will need to be modified. For an example of these calls, see /interactive/institution.js:629.
-* You will need to subsitute your own Disqus key, see XXXXX.
+* You will need to subsitute your own Disqus keys, defined as DISQUS_USER_API_KEY, DISQUS_FORUM_API_KEY, and DISQUS_FORUM_ID placed in a file named disqus_config.php as referenced from functions.php as well as installing the Disqus plugin for Wordpress.
 
 # License
 
